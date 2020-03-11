@@ -1,0 +1,13 @@
+<div class="col-9">
+    <div class="row">
+      <ng-container
+      *ngFor="let character of getFilteredCharacter() ">
+        <div class="col-4 "> 
+          <app-character
+          [inputCharacter]="character"> 
+          </app-character>
+        </div>
+      </ng-container>
+
+    </div>
+  </div>
