@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-welcomepage',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./welcomepage.component.css']
 })
 export class WelcomepageComponent implements OnInit {
-
+  faCoffee = faCoffee;
   constructor(private router: Router) { }
 
   ngOnInit(): void {

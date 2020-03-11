@@ -10,17 +10,24 @@ import { BattleComponent } from './components/view/battle/battle.component';
 import { BattleService } from './service/battle.service';
 import { SmashService } from './service/smash.service';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     WelcomepageComponent,
     CharacterComponent,
     MenuComponent,
-    BattleComponent
+    BattleComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
   ],
   providers: [
     BattleService,
@@ -28,4 +35,8 @@ import { SmashService } from './service/smash.service';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+  
+  }
+}
