@@ -10,13 +10,62 @@ p{
     justify-content: center;
     align-items: center;
     color: aliceblue;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
+
+.clock{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
 .posImg{
     
     display: flex;
-   
     align-items: center;
 }
+
+.battery{
+    display: flex;
+    align-items: center;
+    color: #d1d1d1;
+    font-size: 25pt;
+    padding-left: 15px;
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    color: #a25249;
+    font-size: 25pt;
+}
+
+.tets{
+    display: flex;
+    align-items: center;
+    color: #c9a440;
+    font-size: 25pt;
+}
+
+.setting{
+    display: flex;
+    align-items: center;
+    color: #d1d1d1;
+    font-size: 25pt;
+}
+
+.poweroff{
+    display: flex;
+    align-items: center;
+    color: #d1d1d1;
+    font-size: 25pt;
+}
+
 .iconAv{
     width: 50px;
     content:url("https://i.ya-webdesign.com/images/avatar-png-1.png");
@@ -32,6 +81,10 @@ p{
     outline: 5px solid;
     outline-color: #81d3e0;
     padding: 3px;
+    cursor: pointer;
+}
+
+.clickable{
     cursor: pointer;
 }
 
