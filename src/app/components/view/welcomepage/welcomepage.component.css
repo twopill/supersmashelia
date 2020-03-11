@@ -5,5 +5,74 @@ button{
 }
 
 p{
-    font-size: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.posImg{
+    
+    display: flex;
+   
+    align-items: center;
+}
+.iconAv{
+    width: 50px;
+    content:url("https://i.ya-webdesign.com/images/avatar-png-1.png");
+}
+
+.coverGame1{
+    width: 250px;
+    height: 250px;
+    content:url("https://www.mobygames.com/images/covers/l/548925-super-smash-bros-ultimate-nintendo-switch-front-cover.jpg");
+}
+
+.coverGame1:hover{
+    outline: 5px solid;
+    outline-color: #81d3e0;
+    padding: 3px;
+}
+
+.coverGame2{
+    width: 250px;
+    height: 250px;
+    content:url("https://e.snmc.io/lk/lv/x/c159fe0e9c12ded645579fb80318fdf7/5278691");
+}
+.coverGame2:hover{
+    outline: 5px solid;
+    outline-color: #81d3e0;
+    padding: 3px;
+    
+}
+
+.coverGame3{
+    width: 250px;
+    height: 250px;
+    content:url("https://cdn.vox-cdn.com/thumbor/7Xn1544xFNw7pWgbcianBSpkfcY=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19426558/re3.png");
+}
+.coverGame3:hover{
+    outline: 5px solid;
+    outline-color: #81d3e0;
+    padding: 3px;
+}
+.coverGame4{
+    width: 250px;
+    height: 250px;
+    content:url("https://vignette.wikia.nocookie.net/doom/images/9/91/TITLEPIC.jpg/revision/latest/scale-to-width-down/340?cb=20140323153207");
+}
+.coverGame4:hover{
+    outline: 5px solid;
+    outline-color: #81d3e0;
+    padding: 3px;
+}
+
+.container {
+    height: 1000px;
+    
+}
+
+.background{
+    background-color: #2f2f2f;
+
 }
