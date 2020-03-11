@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Character } from 'src/app/classes/Character';
 import {Router} from '@angular/router';
+import { BattleService } from 'src/app/service/battle.service';
+
 
 @Component({
   selector: 'app-character',
@@ -31,7 +33,9 @@ export class CharacterComponent implements OnInit {
 
   ];
 
-  constructor(private router: Router) { }
+  constructor(
+    public BattleService: BattleService
+  ) { }
 
   ngOnInit(): void {
   }

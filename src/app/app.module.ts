@@ -6,19 +6,26 @@ import { AppComponent } from './app.component';
 import { WelcomepageComponent } from './components/view/welcomepage/welcomepage.component';
 import { CharacterComponent } from './components/common/character/character.component';
 import { MenuComponent } from './components/view/menu/menu.component';
+import { BattleComponent } from './components/view/battle/battle.component';
+import { BattleService } from './service/battle.service';
+import { SmashService } from './service/smash.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomepageComponent,
     CharacterComponent,
-    MenuComponent
+    MenuComponent,
+    BattleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BattleService,
+    SmashService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

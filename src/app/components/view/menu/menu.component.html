@@ -1,12 +1,13 @@
-<div class="col-9">
+<div class="container">
     <div class="row">
-      <ng-container
-      *ngFor="let character of getFilteredCharacter() ">
-        <div class="col-4 "> 
-          <app-character
-          [inputCharacter]="character"> 
-          </app-character>
+      
+        <div class="col-3" *ngFor="let character of characters" 
+         (click)="BattleService.addCharacterToBattle(character)"
+        > 
+          <img src="{{character.url}}" alt="" style="width: 90px">
+          <p>{{character.name}}</p>
         </div>
-      </ng-container>
+      
     </div>
+    <button [routerLink]="['/fight']" >FIGHT</button>
   </div>

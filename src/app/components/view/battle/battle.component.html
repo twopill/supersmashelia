@@ -1,0 +1,5 @@
+<div class="div" *ngFor="let character of BattleService.characters" >
+    <img src={{character.url}} width="25%">
+</div>
+
+<input type="submit" (click)="SmashService.fightRandom(BattleService.characters)" />
