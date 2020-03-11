@@ -23,7 +23,8 @@ export class MenuComponent implements OnInit {
     specialAtk: 50 ,
     def: 20
   }],
-
+    atk: 30,
+    life: 100,
     url:'https://toppng.com/uploads/preview/do-any-characters-have-renders-that-are-based-on-official-super-smash-bros-ultimate-bowser-render-11563060022zjp1g5qgz0.png'
     },
     {
@@ -37,7 +38,8 @@ export class MenuComponent implements OnInit {
       specialAtk: 50 ,
       def: 20
     }],
-  
+    atk: 30,
+    life: 100,
       url:'https://vignette.wikia.nocookie.net/supermarioitalia/images/a/af/Lucario_SSB4.png/revision/latest?cb=20140131160522&path-prefix=it'
       },
       {
@@ -51,7 +53,8 @@ export class MenuComponent implements OnInit {
         specialAtk: 50 ,
         def: 20
       }],
-    
+      atk: 30,
+      life: 100,
         url:'https://vignette.wikia.nocookie.net/supermarioitalia/images/a/af/Lucario_SSB4.png/revision/latest?cb=20140131160522&path-prefix=it'
         },
         {
@@ -65,7 +68,8 @@ export class MenuComponent implements OnInit {
           specialAtk: 50 ,
           def: 20
         }],
-      
+        atk: 30,
+        life: 100,
           url:'https://toppng.com/uploads/preview/do-any-characters-have-renders-that-are-based-on-official-super-smash-bros-ultimate-bowser-render-11563060022zjp1g5qgz0.png'
           },
         {
@@ -79,7 +83,8 @@ export class MenuComponent implements OnInit {
           specialAtk: 50 ,
           def: 20
         }],
-      
+        atk: 30,
+        life: 100,
           url:'https://toppng.com/uploads/preview/do-any-characters-have-renders-that-are-based-on-official-super-smash-bros-ultimate-bowser-render-11563060022zjp1g5qgz0.png'
           },
         
