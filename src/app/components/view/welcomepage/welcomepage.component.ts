@@ -21,20 +21,19 @@ export class WelcomepageComponent implements OnInit {
   faBatteryThreeQuarters = faBatteryThreeQuarters;
 
   constructor(private router: Router) { }
-
+  
   ngOnInit(): void {
+    
   }
 
-  counterBattery = () =>{
-
-  }
-
-  time = () : Date => {
+  
+  time = ()  => {
     const today = new Date();
     const time = today.getHours()+':'+ today.getMinutes();
     
     console.log(time);
     
+
     // return time;
   }
 }
