@@ -1,6 +1,9 @@
 import { Component, OnInit,Input, Output } from '@angular/core';
 import { Character } from 'src/app/classes/Character';
 import { BattleService } from 'src/app/service/battle.service';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faMeteor } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-menu',
@@ -8,6 +11,10 @@ import { BattleService } from 'src/app/service/battle.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  
+  faHeart = faHeart   ;
+  faMeteor = faMeteor ;
+  faHome = faHome     ;
 
   public term: string = '';
 
@@ -25,7 +32,7 @@ export class MenuComponent implements OnInit {
   }],
     atk: 30,
     life: 100,
-    url:'https://toppng.com/uploads/preview/do-any-characters-have-renders-that-are-based-on-official-super-smash-bros-ultimate-bowser-render-11563060022zjp1g5qgz0.png'
+    url:'http://pngimg.com/uploads/policeman/policeman_PNG89067.png'
     },
     {
       characterID: 2,
@@ -40,10 +47,10 @@ export class MenuComponent implements OnInit {
     }],
     atk: 30,
     life: 100,
-      url:'https://vignette.wikia.nocookie.net/supermarioitalia/images/a/af/Lucario_SSB4.png/revision/latest?cb=20140131160522&path-prefix=it'
+      url:'http://pngimg.com/uploads/alien/alien_PNG39.png'
       },
       {
-        characterID: 2,
+        characterID: 3,
         name: 'beppe',
         description: 'Occhio per occhio',
         stat: [{
@@ -55,10 +62,10 @@ export class MenuComponent implements OnInit {
       }],
       atk: 30,
       life: 100,
-        url:'https://vignette.wikia.nocookie.net/supermarioitalia/images/a/af/Lucario_SSB4.png/revision/latest?cb=20140131160522&path-prefix=it'
+        url:'http://pngimg.com/uploads/werewolf/werewolf_PNG2.png'
         },
         {
-          characterID: 1,
+          characterID: 4,
           name: 'gianni',
           description: 'Salutava sempre',
           stat: [{
@@ -70,10 +77,10 @@ export class MenuComponent implements OnInit {
         }],
         atk: 30,
         life: 100,
-          url:'https://toppng.com/uploads/preview/do-any-characters-have-renders-that-are-based-on-official-super-smash-bros-ultimate-bowser-render-11563060022zjp1g5qgz0.png'
+          url:'http://pngimg.com/uploads/slender_man/slender_man_PNG31.png'
           },
         {
-          characterID: 1,
+          characterID: 5,
           name: 'gianni',
           description: 'Salutava sempre',
           stat: [{
@@ -85,10 +92,10 @@ export class MenuComponent implements OnInit {
         }],
         atk: 30,
         life: 100,
-          url:'https://toppng.com/uploads/preview/do-any-characters-have-renders-that-are-based-on-official-super-smash-bros-ultimate-bowser-render-11563060022zjp1g5qgz0.png'
+          url:'http://pngimg.com/uploads/pinocchio/pinocchio_PNG1.png'
           },
           {
-            characterID: 2,
+            characterID: 6 ,
             name: 'beppe',
             description: 'Occhio per occhio',
             stat: [{
@@ -100,7 +107,7 @@ export class MenuComponent implements OnInit {
           }],
           atk: 30,
           life: 100,
-            url:'https://vignette.wikia.nocookie.net/supermarioitalia/images/a/af/Lucario_SSB4.png/revision/latest?cb=20140131160522&path-prefix=it'
+            url:'http://pngimg.com/uploads/zombie/zombie_PNG44.png'
             }
 
 
