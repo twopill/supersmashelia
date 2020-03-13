@@ -12,12 +12,12 @@
     <button [routerLink]="['/fight']" >FIGHT</button>
   </div> -->
 
-  <div class="container">
+  <!--<div class="container">
     <div class="row">
       <div class="col-6"><fa-icon [icon]="faHome" class="" style="color: white;" [routerLink]="['/welcomepage']"></fa-icon></div>
       <div class="col-6"><p>a</p></div>
     </div> 
-    <!-- Header -->
+  
     <div class="row">
       <div class="col-5" >
          <div class="row backRow" >
@@ -50,7 +50,7 @@
       
       
     </div> 
-    <!-- Body -->
+    
     <div class="row">
 
       <div class="col-4"><p>c</p></div>
@@ -58,6 +58,51 @@
       <div class="col-4"><p>c</p></div>
 
     </div> 
-    <!-- Footer -->
+    
 
+  </div> -->
+
+<div class="background">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+      </div>
+      <div class="col-8 centrale">
+        <!-- <p class="title">TITOLO FANTASTICO</p> -->
+        <div class="title"></div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4 centrale">
+        <p style="color: RED;"></p>
+      </div>
+      <div class="col-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-2 " *ngFor="let character of characters;let i = index" >
+        <img src="{{character.url}}" class="imgX backPg clickable" 
+        (click)="BattleService.addCharacterToBattle(character)"  [ngStyle]="{ 'background-color': colors[i] }">
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-3" *ngFor="let cara of BattleService.characters" >
+            
+        <img src="{{cara.url}}" class="imgX">
+        <p class="imgX ">
+          <fa-icon [icon]="faHeart" class="" style="color: red;"></fa-icon>
+          {{cara.life}}
+          <fa-icon [icon]="faMeteor" class="" style="color: rgb(91, 150, 218);"></fa-icon>
+          {{cara.atk}}
+        </p>
+        </div>
+        <div class="col-6">x</div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button [routerLink]="['/fight']">FIGHT BRO</button>
+      </div>
+    </div>
   </div>
+</div>

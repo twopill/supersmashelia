@@ -17,6 +17,16 @@ export class MenuComponent implements OnInit {
   faHome = faHome     ;
 
   public term: string = '';
+  
+  public colors: string[] = [
+    '#fea87d',
+    '#3eac7d',
+    '#1e237d',
+    '#ee237d',
+    '#ee231d',
+    '#fac70d',
+
+  ]
 
   public characters: Character[] = [
 {
@@ -32,7 +42,7 @@ export class MenuComponent implements OnInit {
   }],
     atk: 30,
     life: 100,
-    url:'http://pngimg.com/uploads/policeman/policeman_PNG89067.png'
+    url:'../../../../assets/monster.png'
     },
     {
       characterID: 2,
@@ -47,7 +57,7 @@ export class MenuComponent implements OnInit {
     }],
     atk: 30,
     life: 100,
-      url:'http://pngimg.com/uploads/alien/alien_PNG39.png'
+      url:'../../../../assets/cat.png'
       },
       {
         characterID: 3,
@@ -62,7 +72,7 @@ export class MenuComponent implements OnInit {
       }],
       atk: 30,
       life: 100,
-        url:'http://pngimg.com/uploads/werewolf/werewolf_PNG2.png'
+        url:'../../../../assets/devil.png'
         },
         {
           characterID: 4,
@@ -77,7 +87,7 @@ export class MenuComponent implements OnInit {
         }],
         atk: 30,
         life: 100,
-          url:'http://pngimg.com/uploads/slender_man/slender_man_PNG31.png'
+          url:'../../../../assets/badboy.png'
           },
         {
           characterID: 5,
