@@ -3,4 +3,6 @@
     <p>{{character.life}}</p>
 </div>
 
-<input type="submit" (click)="SmashService.fightRandom(BattleService.characters[0],BattleService.characters[1])" />
+
+<button (click)="SmashService.fight1(BattleService.characters[0],BattleService.characters[1])" >PG 1</button>
+<button (click)="SmashService.fight2(BattleService.characters[0],BattleService.characters[1])" >PG 2</button>

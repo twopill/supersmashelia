@@ -13,11 +13,10 @@ export class BattleService {
 
     addCharacterToBattle = (character) => {
         
-        
-        if(!this.isCharacterInBattle(character))
+        if(!this.isCharacterInBattle(character) && this.characters.length < 2){
           this.characters.push(character);
           console.log(character);
-        
+    }
     }
 
     getCharacter = () =>{

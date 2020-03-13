@@ -4,6 +4,7 @@ import { BattleService } from 'src/app/service/battle.service';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faMeteor } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { TornamentService } from 'src/app/service/tornament.service';
 
 @Component({
   selector: 'app-menu',
@@ -123,7 +124,10 @@ export class MenuComponent implements OnInit {
 
   ];
   
-  constructor(public BattleService: BattleService) { }
+  constructor(
+    public BattleService: BattleService,
+    public TornamentService: TornamentService
+    ) { }
 
   ngOnInit(): void {
   }

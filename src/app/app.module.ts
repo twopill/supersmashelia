@@ -12,6 +12,7 @@ import { SmashService } from './service/smash.service';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TetsComponent } from './components/view/tets/tets.component';
+import { TournamentComponent } from './components/view/tournament/tournament.component';
 
 
 
@@ -24,6 +25,7 @@ import { TetsComponent } from './components/view/tets/tets.component';
     MenuComponent,
     BattleComponent,
     TetsComponent,
+    TournamentComponent,
     
   ],
   imports: [
