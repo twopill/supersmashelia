@@ -13,7 +13,8 @@ export class BattleComponent implements OnInit {
 
   faHeart = faHeart   ;
   faMeteor = faMeteor ;
-
+  public showGif:boolean=false;
+  public showGif2:boolean=false;
   public character: Character [] = [];
 
   constructor(
@@ -24,5 +25,18 @@ export class BattleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  smashEffectOn = () =>{
+        
+    this.showGif = true;
+    setTimeout( () => this.showGif = false, 200);
+    
+  }
+
+  smashEffectOn2 = () =>{
+        
+    this.showGif2 = true;
+    setTimeout( () => this.showGif2 = false, 200);
+    
+  }
   
 }

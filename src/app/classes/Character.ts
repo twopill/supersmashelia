@@ -8,6 +8,7 @@ export class Character{
     public stat: Stat[] = [];
     public atk: number;
     public life: number;
-    public url: string;
+    public url: string;    
 
 }
+
