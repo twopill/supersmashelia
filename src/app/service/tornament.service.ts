@@ -2,7 +2,7 @@ import { Character } from '../classes/Character'
 import {
     Injectable
   } from '@angular/core';
-import {Router} from '@angular/router';
+import {Router, RouterEvent} from '@angular/router';
 
 @Injectable({
     providedIn: 'root'
@@ -20,10 +20,19 @@ export class TornamentService {
 
     addCharacterToTornament = (character) => {
         
-        if(!this.isCharacterInTornament(character) && this.characters.length < 8){
+        if(!this.isCharacterInTornament(character) && this.characters.length < 8 ){
           this.characters.push(character);
           console.log(character);
     }
+    }
+//tolto un attimo dal bottone del tonreo in menu compinent " [routerLink]="['/torneo']" "
+    controlloAccessTour = () =>{
+      console.log(this.characters.length);
+      if(this.characters.length > 2){
+        this.router.navigateByUrl('/torneo');
+      }else{
+        alert('Aggiungi più di un personaggio per partecipare al torneo');
+      }
     }
 
     fightTorneo = () => {

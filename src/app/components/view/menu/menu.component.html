@@ -41,7 +41,7 @@
     <div class="row">
       <div class="col-12">
         <div class="bloccofight clickable" [routerLink]="['/fight']"></div>
-        <button [routerLink]="['/torneo']">TORNEO</button>
+        <button  (click)="TornamentService.controlloAccessTour()">TORNEO</button>
       </div>
     </div>
   </div>
