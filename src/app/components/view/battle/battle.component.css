@@ -1,35 +1,44 @@
 .background{
-    width: 100%x;
+    background-image: url("../../../../assets/background.jpg");
+    background-repeat: repeat;
+    width: 100%;
     height: 100vh;
-    background-color: rgb(53, 53, 53);
 }
 
 .container{
     max-width: 1400px;
 }
 
+
 .posCol{
     margin-top: 15px;
+    height: 10px;
 }
 
 .lifeChara0{
-    background-color: green;
-    padding: 25px;
+    background-color: rgb(91, 179, 91);
+    padding: 15px;
+    border-radius: 24px;
     width: 100%;
-    height: 40px;
+    
 }
 
 .bottoneChara{
-
-    background-color: slategray;
+    
+    background-image: url("../../../../assets/buttonarcade.png");
+    background-repeat: no-repeat;
     width: 100%;
-    padding: 35px;
-    height: 40px;
+    height: 250px;
+    
 
 }
 
+.bottoneChara:active{
+    background-color: rgb(168, 36, 10);
+}
+
 .colX{
-    height: 500px;
+    height: 400px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -37,3 +46,10 @@
 .imgCl{
     width: 25%;
 }
+
+.iconeStile{
+    
+    width: 100%;
+    color:white;
+}
+

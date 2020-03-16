@@ -25,7 +25,6 @@ export class TornamentService {
           console.log(character);
     }
     }
-//tolto un attimo dal bottone del tonreo in menu compinent " [routerLink]="['/torneo']" "
     controlloAccessTour = () =>{
       console.log(this.characters.length);
       if(this.characters.length > 2){
@@ -39,7 +38,7 @@ export class TornamentService {
       console.log('entrato');
       let rand = Math.round(this.characters.length * Math.random() );
       console.log(this.characters.length);
-      alert('Ha vinto: '+rand);
+      alert('Ha vinto: '+this.characters[rand].name);
   
     }
 

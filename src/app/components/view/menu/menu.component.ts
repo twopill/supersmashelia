@@ -32,7 +32,7 @@ export class MenuComponent implements OnInit {
   public characters: Character[] = [
 {
     characterID: 1,
-    name: 'gianni',
+    name: 'Flamevine',
     description: 'Salutava sempre',
     stat: [{
 
@@ -47,7 +47,7 @@ export class MenuComponent implements OnInit {
     },
     {
       characterID: 2,
-      name: 'beppe',
+      name: 'Voodoocat',
       description: 'Occhio per occhio',
       stat: [{
   
@@ -62,7 +62,7 @@ export class MenuComponent implements OnInit {
       },
       {
         characterID: 3,
-        name: 'beppe',
+        name: 'Boweltree',
         description: 'Occhio per occhio',
         stat: [{
     
@@ -77,7 +77,7 @@ export class MenuComponent implements OnInit {
         },
         {
           characterID: 4,
-          name: 'gianni',
+          name: 'Smogpod',
           description: 'Salutava sempre',
           stat: [{
       
@@ -92,7 +92,7 @@ export class MenuComponent implements OnInit {
           },
         {
           characterID: 5,
-          name: 'gianni',
+          name: 'Terrorwing',
           description: 'Salutava sempre',
           stat: [{
       
@@ -103,11 +103,11 @@ export class MenuComponent implements OnInit {
         }],
         atk: 30,
         life: 100,
-          url:'http://pngimg.com/uploads/pinocchio/pinocchio_PNG1.png'
+          url:'../../../../assets/maskboy.png'
           },
           {
             characterID: 6 ,
-            name: 'beppe',
+            name: 'Venomthing',
             description: 'Occhio per occhio',
             stat: [{
         
@@ -118,7 +118,7 @@ export class MenuComponent implements OnInit {
           }],
           atk: 30,
           life: 100,
-            url:'http://pngimg.com/uploads/zombie/zombie_PNG44.png'
+            url:'../../../../assets/sadboy.png'
             }
 
 

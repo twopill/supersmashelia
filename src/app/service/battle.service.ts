@@ -1,11 +1,29 @@
 import { Character } from '../classes/Character';
 import { BattleSelect } from '../classes/BattleSelect';
-
+import { Router } from '@angular/router';
+import {
+    Injectable
+  } from '@angular/core';
+@Injectable({
+    providedIn: 'root'
+  })
 export class BattleService {
     
     public characters: Character[] = [];
 
-    constructor(){}
+    public colors: string[] = [
+      '#fea87d',
+      '#3eac7d',
+      '#1e237d',
+      '#ee237d',
+      '#ee231d',
+      '#fac70d',
+  
+    ]
+
+    constructor(
+        private router: Router
+    ){}
 
     isCharacterInBattle= (character) : boolean => {
         return this.characters.find( cara => cara.characterID == character.characterID ) != null;
@@ -22,6 +40,15 @@ export class BattleService {
     getCharacter = () =>{
         return this.characters;
     }
+
+    controlloAccessBattle = () =>{
+        console.log(this.characters.length);
+        if(this.characters.length > 1){
+          this.router.navigateByUrl('/fight');
+        }else{
+          alert('Aggiungi due personaggi per combattere !');
+        }
+      }
 
     
 

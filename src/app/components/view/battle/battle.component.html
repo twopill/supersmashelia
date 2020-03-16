@@ -1,15 +1,9 @@
-<!-- <div class="div" *ngFor="let character of BattleService.characters" >
-    <img src={{character.url}} width="25%">
-    <p>{{character.life}}</p>
-</div>
-
-<button (click)="SmashService.fight1(BattleService.characters[0],BattleService.characters[1])" >PG 1</button>
-<button (click)="SmashService.fight2(BattleService.characters[0],BattleService.characters[1])" >PG 2</button> -->
 <div class="background">
     <div class="container">
-        <div class="row">
+        <div class="row lifeRow">
             <div class="col-6 posCol">
-                <div class="lifeChara0"></div>
+                <div class="lifeChara0">
+                </div>
             </div>
             <div class="col-6 posCol">
                 <div class="lifeChara0"></div>
@@ -18,17 +12,31 @@
         <div class="row">
             <div class="col-6 colX" *ngFor="let character of BattleService.characters" >
                 <img src={{character.url}} class="imgCl">
+                <p class="iconeStile ">
+                    {{character.name}}
+                    <fa-icon [icon]="faHeart" class="" style="color: red;"></fa-icon>
+                    {{character.life}}
+                    <fa-icon [icon]="faMeteor" class="" style="color: rgb(91, 150, 218);"></fa-icon>
+                    {{character.atk}}
+                  </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                <div class="bottoneChara">
-                    BOTTONE 1
+            <div class="col-6 colX">
+                <div class="bottoneChara" (click)="SmashService.fight1(BattleService.characters[0],BattleService.characters[1])">
+
                 </div>
-            </div>
-            <div class="col-6">
                 <div class="bottoneChara">
-                    BOTTONE 2
+
+                </div>
+                
+            </div>
+            <div class="col-6 colX">
+                <div class="bottoneChara" (click)="SmashService.fight2(BattleService.characters[0],BattleService.characters[1])">
+                    
+                </div>
+                <div class="bottoneChara">
+
                 </div>
             </div>
         </div>
