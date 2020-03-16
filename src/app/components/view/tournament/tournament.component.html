@@ -1,4 +1,16 @@
-<div class="div" *ngFor="let character of TornamentService.characters" >
-    <img src={{character.url}} width="25%">
-    <p>{{character.life}}</p>
+<div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 posCol">
+                <div class="x">TORNEO</div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-6 colX" *ngFor="let character of TornamentService.characters" >
+                <img src={{character.url}} class="imgCl">
+            </div>
+        </div>
+        <button (click)="TornamentService.fightTorneo()">Scopri il vincitore</button>
+    </div>
 </div>

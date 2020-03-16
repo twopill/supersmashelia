@@ -26,6 +26,15 @@ export class TornamentService {
     }
     }
 
+    fightTorneo = () => {
+      console.log('entrato');
+      let rand = Math.round(this.characters.length * Math.random() );
+      console.log(this.characters.length);
+      alert('Ha vinto: '+rand);
+  
+    }
+
+
     
 
 }

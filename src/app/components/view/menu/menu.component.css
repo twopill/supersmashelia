@@ -1,83 +1,11 @@
-/* .container{
-    background-color: rgb(46, 46, 47);
-    
-    max-width: 2140px;
-    max-height: 920px;
-    height: 1920px;
-    
-}
-
-p{
-    color:white;
-}
-
-.img{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    outline: 5px solid;
-    outline-color: antiquewhite;
-    padding: 10px;
-    
-}
-
-.img:hover{
-    outline: 5px solid;
-    outline-color: rgb(92, 177, 67);
-}
-
-.backRow{
-
-   
-
-}
-
-.imgX{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    margin-left: 300px;
-
-}
-
-.blockRed{
-    
-    background: rgb(191,9,21);
-    background: linear-gradient(90deg, rgba(191,9,21,1) 0%, rgba(87, 4, 4, 0.81) 100%); 
-    width: 300px;
-    height: 250px;
-    left: 90px;
-    margin-top: 25px;
-    position: absolute;
-    transform: skewY(-3deg);
-    outline: 2px solid;
-    outline-color: rgb(165, 165, 165);
-}
-
-.colStyle{
-
-    margin-top: 25px;
-
-}
-
-.colStyleSelect{
-    margin-top: 25px;
-    
-} */
-
-/* nuovo */
 
 .background{
     
-    /* background-image: url("https://i.imgur.com/y5w2xwP.png"); */
+    
     background-image: url("../../../../assets/background.jpg");
     background-repeat: repeat;
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     
 }
 
