@@ -5,8 +5,9 @@
       </div>
       <div class="col-8 centrale">
          <div class="title clickable" [routerLink]="['/welcomepage']"></div> 
+         
       </div>
-      <div class="col-2"></div>
+      <div class="col-2"><button (click)="reset()">RESET</button></div>
       
     </div>
     <div class="row">
@@ -17,22 +18,35 @@
       <div class="col-4"></div>
     </div>
     <div class="row">
-      <div class="col-2 " *ngFor="let character of CharacterService.characters;let i = index" >
+      <div class="col-3 colCenter" *ngFor="let character of CharacterService.characters;let i = index" >
         
         <img src="{{character.url}}" class="imgX backPg clickable corner" 
-        (click)="BattleService.addCharacterToBattle(character)" (click)="TornamentService.addCharacterToTornament(character)" [ngStyle]="{ 'background-color': colors[i] }">
+        (click)="BattleService.addCharacterToBattle(character)" (click)="TornamentService.addCharacterToTornament(character)"
+         [ngStyle]="{ 'background-color': colors[i] , 'border-radius': '100%' }">
+        <div class="row">
+          <p class="iconeStile " [ngStyle]="{ 'background-color': colors[i] }" >
+            
+            <fa-icon [icon]="faHeart" class="" style="color: rgb(32, 32, 32);"></fa-icon>
+            {{character.life}}
+            <fa-icon [icon]="faMeteor" class="" style="color: rgb(32, 32, 32);"></fa-icon>
+            {{character.atk}}
+          </p>
         </div>
+          
+      </div>
+        
     </div>
     <div class="row">
       <div class="col-5">
         </div>
         <div class="col-2" *ngFor="let cara of BattleService.characters;let i = index" >
             
-          <img src="{{cara.url}}" class="imgX" [ngStyle]="{ 'background-color': colors[i] }">
-          <p class="iconeStile ">
-            <fa-icon [icon]="faHeart" class="" style="color: red;"></fa-icon>
+          <img src="{{cara.url}}" class="imgXSelect" [ngStyle]="{ 'background-color': colors[i] , 'border-radius': '100%' }">
+          <p class="iconeStile2 " [ngStyle]="{ 'background-color': colors[i]}" >
+            &nbsp; {{cara.name}} <br>
+            <fa-icon [icon]="faHeart" class="" style="color: gb(32, 32, 32);"></fa-icon>
             {{cara.life}}
-            <fa-icon [icon]="faMeteor" class="" style="color: rgb(91, 150, 218);"></fa-icon>
+            <fa-icon [icon]="faMeteor" class="" style="color: gb(32, 32, 32);"></fa-icon>
             {{cara.atk}}
           </p>
 

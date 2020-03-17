@@ -17,7 +17,9 @@ export class BattleComponent implements OnInit {
   public showGif:boolean=false;
   public showGif2:boolean=false;
   public flag : boolean = true;
+  private toggle : boolean = false;
   public lifex:number = 0;
+  public style:string = 'error';
   public character: Character [] = [];
 
   constructor(
@@ -42,6 +44,12 @@ export class BattleComponent implements OnInit {
     this.showGif2 = true;
     setTimeout( () => this.showGif2 = false, 200);
     
+  }
+
+  clickEvent = () => {
+
+
+
   }
   
 

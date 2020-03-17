@@ -100,7 +100,37 @@ export class CharacterService {
               atk: 30,
               life: 100,
                 url:'../../../../assets/sadboy.png'
-                }
+                },
+                {
+                  characterID: 6 ,
+                  name: 'Venomthing',
+                  description: 'Occhio per occhio',
+                  stat: [{
+              
+                  attack: 35,
+                  nameSA: 'Non so fare nulla',
+                  specialAtk: 50 ,
+                  def: 20
+                }],
+                atk: 30,
+                life: 100,
+                  url:'../../../../assets/devil.png'
+                  },
+                  {
+                    characterID: 6 ,
+                    name: 'Venomthing',
+                    description: 'Occhio per occhio',
+                    stat: [{
+                
+                    attack: 35,
+                    nameSA: 'Non so fare nulla',
+                    specialAtk: 50 ,
+                    def: 20
+                  }],
+                  atk: 30,
+                  life: 100,
+                    url:'../../../../assets/cat.png'
+                    }
     
     
     

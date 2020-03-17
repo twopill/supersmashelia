@@ -23,13 +23,14 @@ export class MenuComponent implements OnInit {
   public character: Character [] = [];
   
   public colors: string[] = [
-    '#fea87d',
-    '#3eac7d',
-    '#1e237d',
-    '#ee237d',
-    '#ee231d',
-    '#fac70d',
-
+    '#C7CEEA',
+    '#FFF49C',
+    '#85DE77',
+    '#C8D6B9',
+    '#8FC1A9',
+    '#FBD7BB',
+    '#D1D693',
+    '#E7E5FF',
   ]
 
   constructor(
@@ -45,11 +46,14 @@ export class MenuComponent implements OnInit {
       this.flag = false;
     }
      for(let i = 0; i < this.BattleService.characters.length; i++){
-       console.log('dentro al for');
        this.CharacterService.setCharcaterLife(this.BattleService.characters[0],this.lifex);
        this.CharacterService.setCharcaterLife(this.BattleService.characters[1],this.lifex);
      }
-    
+
+  }
+
+  reset = () =>{
+    window.location.replace('/selectcharacter');
   }
 
 }

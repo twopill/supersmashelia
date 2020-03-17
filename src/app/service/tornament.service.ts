@@ -39,7 +39,7 @@ export class TornamentService {
       let rand = Math.round(this.characters.length * Math.random() );
       
       alert('Ha vinto: '+this.characters[rand].name);
-  
+      window.location.replace('/selectcharacter');
     }
 
 

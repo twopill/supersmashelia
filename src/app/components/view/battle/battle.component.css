@@ -44,11 +44,23 @@
     
 }
 
+
+
 .lifeChara0{
+
     background-color: rgb(91, 179, 91);
     padding: 15px;
     border-radius: 24px;
     width: 100%;
+    
+}
+
+.lifeChara0.my-class{
+
+    background-color: rgb(179, 111, 91);
+    padding: 15px;
+    border-radius: 24px;
+    width: 50%;
     
 }
 

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row lifeRow">
             <div class="col-6 posCol">
-                <div class="lifeChara0">
+                <div class="lifeChara0" ngClass="myVar">
                 </div>
             </div>
             <div class="col-6 posCol">
@@ -13,7 +13,6 @@
             <div id="gifEffect" *ngIf="showGif"></div>
             <div id="gifEffect2" *ngIf="showGif2"></div>
             <div class="col-6 colX" *ngFor="let character of BattleService.characters" >
-                
                 <img src={{character.url}} class="imgCl">
                 <p class="iconeStile ">
                     {{character.name}}
@@ -28,21 +27,14 @@
             <div class="col-6 colX">
                 <div class="bottoneChara" (click)="SmashService.fight1(BattleService.characters[0],BattleService.characters[1])"
                 (click)="smashEffectOn()">
-
                 </div>
-                <!-- <div class="bottoneChara">
-
-                </div> -->
-                
             </div>
             <div class="col-6 colX">
                 <div class="bottoneChara" (click)="SmashService.fight2(BattleService.characters[0],BattleService.characters[1])"
                 (click)="smashEffectOn2()"   >
-                    
+                
                 </div>
-                <!-- <div class="bottoneChara">
-
-                </div> -->
+                <input id="setbtn" type="button" value="set" ng-click="myVar='my-class'" >
             </div>
         </div>
     </div>
