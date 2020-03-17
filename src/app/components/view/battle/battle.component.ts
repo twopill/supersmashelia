@@ -4,6 +4,7 @@ import { Character } from 'src/app/classes/Character';
 import { SmashService } from 'src/app/service/smash.service';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faMeteor } from '@fortawesome/free-solid-svg-icons';
+import { CharacterService } from 'src/app/service/character.service';
 @Component({
   selector: 'app-battle',
   templateUrl: './battle.component.html',
@@ -15,14 +16,18 @@ export class BattleComponent implements OnInit {
   faMeteor = faMeteor ;
   public showGif:boolean=false;
   public showGif2:boolean=false;
+  public flag : boolean = true;
+  public lifex:number = 0;
   public character: Character [] = [];
 
   constructor(
     public BattleService: BattleService,
-    public SmashService: SmashService
+    public SmashService: SmashService,
+    public CharacterService: CharacterService
   ) { }
 
   ngOnInit(): void {
+    
   }
 
   smashEffectOn = () =>{
@@ -39,4 +44,7 @@ export class BattleComponent implements OnInit {
     
   }
   
+
+  
+
 }

@@ -22,11 +22,11 @@ export class TornamentService {
         
         if(!this.isCharacterInTornament(character) && this.characters.length < 8 ){
           this.characters.push(character);
-          console.log(character);
+          
     }
     }
     controlloAccessTour = () =>{
-      console.log(this.characters.length);
+      
       if(this.characters.length > 2){
         this.router.navigateByUrl('/torneo');
       }else{
@@ -35,9 +35,9 @@ export class TornamentService {
     }
 
     fightTorneo = () => {
-      console.log('entrato');
+      
       let rand = Math.round(this.characters.length * Math.random() );
-      console.log(this.characters.length);
+      
       alert('Ha vinto: '+this.characters[rand].name);
   
     }

@@ -19,12 +19,8 @@ export class SmashService {
         private router: Router,
         public CharacterService:CharacterService 
     ){}
-   
-    
+       
     public clicks : number = 0;
-    
-    
-    
 
     fight1 = (character1: Character,character2: Character) => {
         this.characters[0] = character1;

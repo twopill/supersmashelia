@@ -33,7 +33,7 @@ export class BattleService {
         
         if(!this.isCharacterInBattle(character) && this.characters.length < 2){
           this.characters.push(character);
-          console.log(character);
+         
     }
     }
 
@@ -42,7 +42,7 @@ export class BattleService {
     }
 
     controlloAccessBattle = () =>{
-        console.log(this.characters.length);
+        
         if(this.characters.length > 1){
           this.router.navigateByUrl('/fight');
         }else{
