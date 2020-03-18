@@ -19,7 +19,9 @@ export class BattleComponent implements OnInit {
   public flag : boolean = true;
   private toggle : boolean = false;
   public lifex:number = 0;
-  public style:string = 'error';
+  public boxWidth:number =  100;
+  public boxWidth2:number = 100;
+  public boxColor:string = 'rgb(91, 179, 91)'; 
   public character: Character [] = [];
 
   constructor(

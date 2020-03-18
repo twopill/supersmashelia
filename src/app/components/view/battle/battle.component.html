@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row lifeRow">
             <div class="col-6 posCol">
-                <div class="lifeChara0" ngClass="myVar">
+                <div class="lifeChara0"  [ngStyle]="{width: boxWidth + '%'}">
                 </div>
             </div>
             <div class="col-6 posCol">
-                <div class="lifeChara0"></div>
+                <div class="lifeChara0" [ngStyle]="{width: boxWidth2 + '%'}"></div>
             </div>
         </div>
         <div class="row">
@@ -25,16 +25,17 @@
         </div>
         <div class="row">
             <div class="col-6 colX">
+                <div class="backItem">
                 <div class="bottoneChara" (click)="SmashService.fight1(BattleService.characters[0],BattleService.characters[1])"
-                (click)="smashEffectOn()">
+                (click)="smashEffectOn()" (click)=" boxWidth2 = boxWidth2 - 15" >
                 </div>
             </div>
+            </div>
             <div class="col-6 colX">
+                <div class="backItem">
                 <div class="bottoneChara" (click)="SmashService.fight2(BattleService.characters[0],BattleService.characters[1])"
-                (click)="smashEffectOn2()"   >
-                
-                </div>
-                <input id="setbtn" type="button" value="set" ng-click="myVar='my-class'" >
+                (click)="smashEffectOn2()"  (click)=" boxWidth = boxWidth - 15" >
+            </div>
             </div>
         </div>
     </div>
