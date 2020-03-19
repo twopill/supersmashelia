@@ -125,7 +125,7 @@ p{
 }
 
 .container {
-    height: 1000px;
+    height: 100vh;
     
     
 }
@@ -134,3 +134,17 @@ p{
     background-color: #2f2f2f;
     
 }
+
+.content-desktop {display: block;}
+.content-mobile {display: none;
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-desktop {display: none;}
+    .content-mobile {display: block;}
+    
+    }
+
+    

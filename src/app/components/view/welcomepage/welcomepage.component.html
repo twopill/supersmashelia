@@ -1,52 +1,585 @@
-<!-- <div class="container h-800" style="margin-top: 10%;">
-      <button type="button" class="btn btn-outline-danger" routerLink="/selectcharacter">
-        <p>SMASH</p>
-      </button>
-</div> -->
-<div class="scroll">
-<div class="background">
-<div class="container">
-  
-  <div class="row" style="padding-top: 10px">
-    <div class="col-4 ">
-      <div class="posImg">
-      <img class="iconAv">
-    </div>
-    </div>
-    <div class="col-4 "><p></p></div>
-    <div class="col-4 ">
-      <p>
-        <iframe src="http://free.timeanddate.com/clock/i76ytrkh/n254/tlit6/fcfff/tct/pct/ftb/ts1" frameborder="0" width="38" height="19" allowTransparency="true" style="margin-right:30px ;"></iframe>
-        
-        <label style="padding-right: 30px;" ></label>
-         100%  <fa-icon [icon]="faBatteryThreeQuarters" class=" battery"></fa-icon></p></div>
-  </div> <!--header-->
-  <div class="row" style="padding-top: 150px; padding-bottom: 150px;">
-    <div class="col-3"><img class="coverGame1" routerLink="/selectcharacter"></div>
-    <div class="col-3"><img class="coverGame2"></div>
-    <div class="col-3"><img class="coverGame3"></div>
-    <div class="col-3"><img class="coverGame4"></div>
-  </div> <!-- body -->
-  <div class="row">
-    <div class="col-4"><p></p>
+<div class="content-desktop">
+  <div class="scroll">
+    <div class="background">
+      <div class="container">
 
+        <div class="row" style="padding-top: 10px">
+          <div class="col-4 ">
+            <div class="posImg">
+              <img class="iconAv">
+            </div>
+          </div>
+          <div class="col-4 ">
+            <p></p>
+          </div>
+          <div class="col-4 ">
+            <p>
+              <iframe src="http://free.timeanddate.com/clock/i76ytrkh/n254/tlit6/fcfff/tct/pct/ftb/ts1" frameborder="0"
+                width="38" height="19" allowTransparency="true" style="margin-right:30px ;"></iframe>
+
+              <label style="padding-right: 30px;"></label>
+              100% <fa-icon [icon]="faBatteryThreeQuarters" class=" battery"></fa-icon>
+            </p>
+          </div>
+        </div>
+        <!--header-->
+        <div class="row" style="padding-top: 150px; padding-bottom: 150px;">
+          <div class="col-3"><img class="coverGame1" routerLink="/selectcharacter"></div>
+          <div class="col-3"><img class="coverGame2"></div>
+          <div class="col-3"><img class="coverGame3"></div>
+          <div class="col-3"><img class="coverGame4"></div>
+        </div> <!-- body -->
+        <div class="row">
+          <div class="col-4">
+            <p></p>
+
+          </div>
+          <div class="col-1">
+            <fa-icon [icon]="faNewspaper" class="clickable news"></fa-icon>
+          </div>
+          <div class="col-1">
+            <fa-icon [icon]="faShoppingBasket" class="clickable tets" routerLink="/tets"></fa-icon>
+          </div>
+          <div class="col-1">
+            <fa-icon [icon]="faToolbox" class="clickable setting"></fa-icon>
+          </div>
+          <div class="col-1">
+            <fa-icon [icon]="faPowerOff" class="clickable poweroff"></fa-icon>
+          </div>
+
+          
+        </div>
+      </div>
     </div>
-    <div class="col-1">
-      <fa-icon [icon]="faNewspaper" class="clickable news"></fa-icon>
-    </div>
-    <div class="col-1">
-      <fa-icon [icon]="faShoppingBasket" class="clickable tets" routerLink="/tets"></fa-icon>
-    </div>
-    <div class="col-1">
-      <fa-icon [icon]="faToolbox" class="clickable setting" ></fa-icon>
-    </div>
-    <div class="col-1">
-      <fa-icon [icon]="faPowerOff" class="clickable poweroff"></fa-icon>
-    </div>
-    
-    <div class="col-4"><p></p>
-      
-  </div> <!-- footer -->
   </div>
 </div>
+
+
+  <div class="content-mobile">
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: custom – 1;
+		--web-view-id: custom___1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: custom___1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#custom___1 {
+		position: absolute;
+		width: 393px;
+		height: 851px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: custom – 1;
+		--web-view-id: custom___1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#background {
+		position: absolute;
+		width: 393px;
+		height: 851px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.sfondo {
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		height: 851px;
+		left: 0px;
+		top: 0px;
+	}
+	#polygon {
+		position: absolute;
+		width: 624px;
+		height: 350px;
+		left: -85px;
+		top: 551px;
+		overflow: visible;
+	}
+	#Polygon_2_k {
+		opacity: 0.37;
+	}
+	.Polygon_2_k {
+		overflow: hidden;
+		position: absolute;
+		width: 291px;
+		height: 202px;
+		left: 0px;
+		top: 29px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_3_m {
+		opacity: 0.59;
+	}
+	.Polygon_3_m {
+		overflow: hidden;
+		position: absolute;
+		width: 291px;
+		height: 202px;
+		left: 199px;
+		top: 43px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_5_o {
+		opacity: 0.43;
+	}
+	.Polygon_5_o {
+		overflow: hidden;
+		position: absolute;
+		width: 291px;
+		height: 202px;
+		left: 85px;
+		top: 6px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Polygon_4_q {
+		opacity: 0.56;
+	}
+	.Polygon_4_q {
+		overflow: hidden;
+		position: absolute;
+		width: 291px;
+		height: 202px;
+		left: 333px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		height: 174px;
+		left: 167px;
+		top: 143px;
+	}
+	.grande {
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		height: 290px;
+		left: 210px;
+		top: 10px;
+	}
+	.cubo_piccolo {
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		height: 63px;
+		left: 210px;
+		top: 10px;
+	}
+	.Rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		height: 174px;
+		left: 352px;
+		top: 144px;
+	}
+	.Rectangle_12 {
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		height: 174px;
+		left: 395px;
+		top: 163px;
+	}
+	.Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		height: 174px;
+		left: 416px;
+		top: 144px;
+	}
+	.Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 174px;
+		left: 439px;
+		top: 156px;
+	}
+	.Rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		height: 174px;
+		left: 141px;
+		top: 162px;
+	}
+	.Rectangle_8 {
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		height: 174px;
+		left: 120px;
+		top: 143px;
+	}
+	.Rectangle_9 {
+		position: absolute;
+		overflow: visible;
+		width: 33px;
+		height: 174px;
+		left: 92px;
+		top: 155px;
+	}
+	.Rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		height: 174px;
+		left: 71px;
+		top: 166px;
+	}
+	#Rectangle_21 {
+		opacity: 0.11;
+	}
+	.Rectangle_21 {
+		width: 47px;
+		height: 47px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(85px, -551px) matrix(1,0,0,1,125,691) rotate(90deg);
+		transform-origin: center;
+	}
+	#Rectangle_22 {
+		opacity: 0.11;
+	}
+	.Rectangle_22 {
+		width: 12px;
+		height: 13px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(85px, -551px) matrix(1,0,0,1,175.5,651.5) rotate(90deg);
+		transform-origin: center;
+	}
+	.Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 139px;
+		left: 81px;
+		top: 211px;
+	}
+	.Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 139px;
+		left: 439px;
+		top: 185px;
+	}
+	#Rectangle_18 {
+		opacity: 0.11;
+	}
+	.Rectangle_18 {
+		width: 39px;
+		height: 126px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(85px, -551px) matrix(1,0,0,1,185.5,608.5) rotate(90deg);
+		transform-origin: center;
+	}
+	#Bottone {
+		position: absolute;
+		width: 221px;
+		height: 184px;
+		left: 171px;
+		top: 73px;
+		overflow: visible;
+	}
+	#Rectangle_20 {
+		opacity: 0.11;
+	}
+	.Rectangle_20 {
+		width: 28px;
+		height: 126px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(-86px, -624px) matrix(1,0,0,1,174,575) rotate(90deg);
+		transform-origin: center;
+	}
+	.Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 233px;
+		height: 87px;
+		left: 0px;
+		top: 109px;
+	}
+	#Play {
+		transform: translate(-86px, -624px) matrix(1,0,0,1,146.1685,738.696) rotate(1deg);
+		transform-origin: center;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 112px;
+		height: 64px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(245,245,245,1);
+	}
+	#img {
+		position: absolute;
+		width: 247px;
+		height: 247px;
+		left: 83px;
+		top: 377px;
+		overflow: visible;
+	}
+	#Ellipse_1 {
+		opacity: 0.09;
+	}
+	.Ellipse_1 {
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		height: 28px;
+		left: 69px;
+		top: 197px;
+	}
+	#cat {
+		position: absolute;
+		width: 247px;
+		height: 247px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#title {
+		position: absolute;
+		width: 331px;
+		height: 257px;
+		left: 44px;
+		top: 99px;
+		overflow: visible;
+	}
+	#a {
+		position: absolute;
+		left: 2px;
+		top: 20px;
+		overflow: hidden;
+		width: 26px;
+		height: 38px;
+		text-align: left;
+		font-family: Upheaval TT (BRK);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		color: rgba(212,63,72,1);
+	}
+	#a_bg {
+		position: absolute;
+		left: 0px;
+		top: 18px;
+		overflow: hidden;
+		width: 26px;
+		height: 38px;
+		text-align: left;
+		font-family: Upheaval TT (BRK);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		color: rgba(245,245,245,1);
+	}
+	#original__game {
+		position: absolute;
+		left: 97px;
+		top: 170px;
+		overflow: visible;
+		width: 235px;
+		height: 87px;
+		text-align: left;
+		font-family: Upheaval TT (BRK);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(212,63,72,1);
+	}
+	#original__game_bi {
+		position: absolute;
+		left: 96px;
+		top: 167px;
+		overflow: visible;
+		width: 220px;
+		height: 87px;
+		text-align: left;
+		font-family: Upheaval TT (BRK);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(245,245,245,1);
+	}
+	#super__smash_elia {
+		position: absolute;
+		left: 39px;
+		top: 2px;
+		overflow: visible;
+		width: 261px;
+		height: 184px;
+		text-align: left;
+		font-family: Upheaval TT (BRK);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 80px;
+		color: rgba(255,255,255,1);
+	}
+	#super__smash_elia_bk {
+		position: absolute;
+		left: 38px;
+		top: 0px;
+		overflow: visible;
+		width: 261px;
+		height: 184px;
+		text-align: left;
+		font-family: Upheaval TT (BRK);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 80px;
+		color: rgba(212,63,72,1);
+	}
+</style>
+
+<div id="custom___1">
+	<div id="background">
+		<svg class="sfondo">
+			<rect fill="rgba(47,47,47,1)" id="sfondo" rx="0" ry="0" x="0" y="0" width="393" height="851">
+			</rect>
+		</svg>
+	</div>
+	<div id="polygon">
+		<svg class="Polygon_2_k" viewBox="0 0 291 202">
+			<linearGradient id="Polygon_2_k" spreadMethod="pad" x1="0.5" x2="0.5" y1="1" y2="0.201">
+				<stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#df8086" stop-opacity="0.6"></stop>
+			</linearGradient>
+			<path fill="url(#Polygon_2_k)" id="Polygon_2_k" d="M 126.8373336791992 25.9096736907959 C 136.0161743164063 13.16655158996582 154.9838256835938 13.16655158996582 164.1626586914063 25.9096736907959 L 264.7504577636719 165.5573425292969 C 275.7087707519531 180.7709350585938 264.837158203125 202 246.0877990722656 202 L 44.91220092773438 202 C 26.1628532409668 202 15.29123115539551 180.7709350585938 26.24954032897949 165.5573425292969 Z">
+			</path>
+		</svg>
+		<svg class="Polygon_3_m" viewBox="0 0 291 202">
+			<linearGradient id="Polygon_3_m" spreadMethod="pad" x1="0.5" x2="0.5" y1="1" y2="0.201">
+				<stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#df8086" stop-opacity="0.6"></stop>
+			</linearGradient>
+			<path fill="url(#Polygon_3_m)" id="Polygon_3_m" d="M 126.8373336791992 25.9096736907959 C 136.0161743164063 13.16655158996582 154.9838256835938 13.16655158996582 164.1626586914063 25.9096736907959 L 264.7504577636719 165.5573425292969 C 275.7087707519531 180.7709350585938 264.837158203125 202 246.0877990722656 202 L 44.91220092773438 202 C 26.1628532409668 202 15.29123115539551 180.7709350585938 26.24954032897949 165.5573425292969 Z">
+			</path>
+		</svg>
+		<svg class="Polygon_5_o" viewBox="0 0 291 202">
+			<linearGradient id="Polygon_5_o" spreadMethod="pad" x1="0.5" x2="0.5" y1="1" y2="0.201">
+				<stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#df8086" stop-opacity="0.6"></stop>
+			</linearGradient>
+			<path fill="url(#Polygon_5_o)" id="Polygon_5_o" d="M 126.8373336791992 25.9096736907959 C 136.0161743164063 13.16655158996582 154.9838256835938 13.16655158996582 164.1626586914063 25.9096736907959 L 264.7504577636719 165.5573425292969 C 275.7087707519531 180.7709350585938 264.837158203125 202 246.0877990722656 202 L 44.91220092773438 202 C 26.1628532409668 202 15.29123115539551 180.7709350585938 26.24954032897949 165.5573425292969 Z">
+			</path>
+		</svg>
+		<svg class="Polygon_4_q" viewBox="0 0 291 202">
+			<linearGradient id="Polygon_4_q" spreadMethod="pad" x1="0.5" x2="0.5" y1="1" y2="0.201">
+				<stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
+				<stop offset="1" stop-color="#df8086" stop-opacity="0.6"></stop>
+			</linearGradient>
+			<path fill="url(#Polygon_4_q)" id="Polygon_4_q" d="M 126.8373336791992 25.9096736907959 C 136.0161743164063 13.16655158996582 154.9838256835938 13.16655158996582 164.1626586914063 25.9096736907959 L 264.7504577636719 165.5573425292969 C 275.7087707519531 180.7709350585938 264.837158203125 202 246.0877990722656 202 L 44.91220092773438 202 C 26.1628532409668 202 15.29123115539551 180.7709350585938 26.24954032897949 165.5573425292969 Z">
+			</path>
+		</svg>
+		<svg class="Rectangle_3">
+			<rect fill="rgba(212,83,90,1)" id="Rectangle_3" rx="22.5" ry="22.5" x="0" y="0" width="45" height="174">
+			</rect>
+		</svg>
+		<svg class="grande">
+			<rect fill="rgba(149,62,67,1)" id="grande" rx="0" ry="0" x="0" y="0" width="143" height="290">
+			</rect>
+		</svg>
+		<svg class="cubo_piccolo">
+			<rect fill="rgba(157,90,94,1)" id="cubo_piccolo" rx="0" ry="0" x="0" y="0" width="143" height="63">
+			</rect>
+		</svg>
+		<svg class="Rectangle_11">
+			<rect fill="rgba(212,83,90,1)" id="Rectangle_11" rx="22.5" ry="22.5" x="0" y="0" width="45" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_12">
+			<rect fill="rgba(216,98,105,1)" id="Rectangle_12" rx="14" ry="14" x="0" y="0" width="28" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_13">
+			<rect fill="rgba(216,98,105,1)" id="Rectangle_13" rx="14" ry="14" x="0" y="0" width="28" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_14">
+			<rect fill="rgba(216,98,105,1)" id="Rectangle_14" rx="19.5" ry="19.5" x="0" y="0" width="39" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_6">
+			<rect fill="rgba(216,98,105,1)" id="Rectangle_6" rx="14" ry="14" x="0" y="0" width="28" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_8">
+			<rect fill="rgba(216,98,105,1)" id="Rectangle_8" rx="14" ry="14" x="0" y="0" width="28" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_9">
+			<rect fill="rgba(216,98,105,1)" id="Rectangle_9" rx="16.5" ry="16.5" x="0" y="0" width="33" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_10">
+			<rect fill="rgba(216,98,105,1)" id="Rectangle_10" rx="14" ry="14" x="0" y="0" width="28" height="174">
+			</rect>
+		</svg>
+		<svg class="Rectangle_21">
+			<rect fill="rgba(33,33,33,1)" id="Rectangle_21" rx="13" ry="13" x="0" y="0" width="47" height="47">
+			</rect>
+		</svg>
+		<svg class="Rectangle_22">
+			<rect fill="rgba(33,33,33,1)" id="Rectangle_22" rx="4" ry="4" x="0" y="0" width="12" height="13">
+			</rect>
+		</svg>
+		<svg class="Rectangle_16">
+			<rect fill="rgba(212,82,89,1)" id="Rectangle_16" rx="19.5" ry="19.5" x="0" y="0" width="39" height="139">
+			</rect>
+		</svg>
+		<svg class="Rectangle_15">
+			<rect fill="rgba(212,82,89,1)" id="Rectangle_15" rx="19.5" ry="19.5" x="0" y="0" width="39" height="139">
+			</rect>
+		</svg>
+		<svg class="Rectangle_18">
+			<rect fill="rgba(33,33,33,1)" id="Rectangle_18" rx="13" ry="13" x="0" y="0" width="39" height="126">
+			</rect>
+		</svg>
+		<div id="Bottone">
+			<svg class="Rectangle_20">
+				<rect fill="rgba(33,33,33,1)" id="Rectangle_20" rx="10" ry="10" x="0" y="0" width="28" height="126">
+				</rect>
+			</svg>
+			<svg class="Rectangle_2">
+				<rect fill="rgba(255,163,4,1)" stroke="rgba(255,255,255,1)" stroke-width="6px" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_2" rx="30" ry="30" x="0" y="0" width="221" height="75">
+				</rect>
+			</svg>
+			<div id="Play">
+				<span>Play</span>
+			</div>
+		</div>
+	</div>
+	<div id="img">
+		<svg class="Ellipse_1">
+			<ellipse fill="rgba(0,0,0,1)" id="Ellipse_1" rx="53.5" ry="14" cx="53.5" cy="14">
+			</ellipse>
+		</svg>
+		<img id="cat" src="../../../../assets/cat.png" >
+	</div>
 </div>
+  </div>

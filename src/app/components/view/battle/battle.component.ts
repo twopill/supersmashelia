@@ -22,6 +22,7 @@ export class BattleComponent implements OnInit {
   public boxWidth:number =  100;
   public boxWidth2:number = 100;
   public boxColor:string = 'rgb(91, 179, 91)'; 
+  
   public character: Character [] = [];
 
   constructor(
