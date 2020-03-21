@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## Welcome to Super Smash Elia Pages
 
-You can use the [editor on GitHub](https://github.com/twopill/supersmashelia/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My project is banal site, in that you can select a character from eigth pg, and select battle ( for 1 vs 1 ) and tournament for random battle with winner.
+This is a training site for my job ( web dev ) and it's very stupid but is my first ( real ) game.
 
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+#This is my **Character Class** for my pg
 
-# Header 1
-## Header 2
-### Header 3
+export class Character{
 
-- Bulleted
-- List
+    public characterID: number;
+    public name: string;
+    public description: string;
+    public stat: Stat[] = [];
+    public atk: number;
+    public life: number;
+    public url: string;    
 
-1. Numbered
-2. List
+}
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/twopill/supersmashelia/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
